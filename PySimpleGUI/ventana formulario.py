@@ -37,3 +37,4 @@ while True:
             }])
         datos = pd.concat([datos, nueva_fila], ignore_index=True)
         datos.to_csv("Empleos.csv", index=False)
+        sg.Popup("Se ha registrado con éxito", title="¡Éxito!")
